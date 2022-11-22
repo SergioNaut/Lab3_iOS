@@ -22,8 +22,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var degreeLabel: UILabel!
     
+    //Bool used for changing between Celsius and Fahrenheit
     var isCelsius = true
     
+    //Variables used for current Location
     var currentLatitude: Double = 0.0
     var currentLongitude: Double = 0.0
     
@@ -69,7 +71,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func onSearchTapped(_ sender: UIButton) {
         loadWeather(search: searchTextField.text)
     }
-    
     
     //Use as base for setting weather images
     private func displaySampleImageForDemo(){
